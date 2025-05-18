@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Status</title>
+    <link rel="stylesheet" href="app-status.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@15.0.0"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="datetime-display" id="datetime-display">Loading...</div>
+      <button class="buttons">Dashboard</button>
+      <button class="buttons">Profile</button>
+      <button class="buttons">Application Status</button>
+      <button class="buttons">Room Details</button>
+      <button class="buttons">Canteen Facilities</button>
+      <button class="buttons">Online Payment</button>
+      <button class="buttons">Complaint Box</button>
+    </div>
+
+    <div class="main-content">
+      <div class="column">
+        <div class="each-text">
+          <span class="label">Name:</span>
+          <span class="value" id="name"></span>
+        </div>
+        <hr />
+        <div class="each-text">
+          <span class="label">Father's Name:</span>
+          <span class="value" id="father-name"></span>
+        </div>
+        <hr />
+        <div class="each-text">
+          <span class="label">Degree:</span>
+          <span class="value" id="degree"></span>
+        </div>
+        <hr />
+        <div class="each-text">
+          <span class="label">Stream:</span>
+          <span class="value" id="stream"></span>
+        </div>
+        <hr />
+        <div class="each-text">
+          <span class="label">Semester:</span>
+          <span class="value" id="semester"></span>
+        </div>
+        <hr />
+        <div class="each-text">
+          <span class="label">Date of Birth:</span>
+          <span class="value" id="dob"></span>
+        </div>
+        <hr />
+        <div class="each-text">
+          <span class="label">Registration Number:</span>
+          <span class="value" id="regn-no"></span>
+        </div>
+        <hr />
+        <div class="each-text">
+          <span class="label">Roll Number:</span>
+          <span class="value" id="roll"></span>
+        </div>
+        <hr />
+        <div class="each-text">
+          <span class="label">Application Status:</span>
+          <span class="value" id="status">-</span>
+        </div>
+        <hr />
+        <div class="each-text">
+          <span class="label">Remarks:</span>
+          <span class="value" id="remarks">-</span>
+        </div>
+        <hr />
+        <div class="btn-area">
+          <button class="btn_submit" id="submit_button">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>
+          Designed and Developed by : Maulana Abul Kalam Azad University of
+          Technology &copy; 2024. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="app-status.js"></script>
+  </body>
+</html>
